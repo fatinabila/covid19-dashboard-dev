@@ -1,0 +1,9 @@
+.rowDashboard {
+    padding:50px;
+}
+
+.bg-light {
+    background-color: #fff!important;
+    border-bottom: solid 1px #cecece!important;
+    padding: 15px 50px;
+}

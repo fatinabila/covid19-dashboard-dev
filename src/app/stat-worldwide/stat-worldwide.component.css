@@ -1,0 +1,96 @@
+.bigNum {
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    text-align:center;
+}
+
+.sub{
+    color: #686666;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.card {
+    box-shadow: 0 0 10px 1px rgba(93, 93, 93, 0.27);
+    border-radius:10px;
+}
+
+.bgRed,
+.bgRed >p {
+    background-color:#110F48;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #0041a4, #1d42a6, #2d44a9, #3945ab, #4446ad); 
+    box-shadow: none;
+}
+
+.green {
+    color:green;
+}
+
+.red {
+    color:red;
+}
+
+.iconWrap {    
+    width: 50px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.iconWrap > img {
+    width:100%;
+}
+
+.rowCard {
+    
+    display: flex;
+    align-items: stretch;
+}
+
+.cardNoShadow {
+    box-shadow: none;
+}
+
+.cardBgImg{
+    background-image: url("https://images.unsplash.com/photo-1584776085622-20e2497547be?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    min-height: 100px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.cardBgImg > p,
+.cardBgImg {
+    color:#fff;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    font-size:20px;
+}
+
+
+.opacity {
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    background-color: #fff;
+    top: -2px;
+    left: -2px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+canvas{
+    /* width:auto;
+    max-width:500px !important; */
+    /* height: 225px  !important;
+    width: 295px  !important; */
+    min-width: 300px !important; 
+
+    max-width:400px !important;
+}
