@@ -1,0 +1,21 @@
+/* .rowDashboard {
+    padding: 30px 50px 0px 50px;
+} */
+
+.rowMaster {
+    padding:30px 50px 0px 50px;
+}
+
+.githubLink{
+    max-width: 50px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.cp{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'B612', sans-serif;
+    font-size: 13px;
+}

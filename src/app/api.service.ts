@@ -9,11 +9,14 @@ export class APIService {
 
   constructor(private _http: HttpClient, private _DateService :  DateService) { }
 
-  getStatByCountry(country) {
-    let yesterday = this._DateService.getFormattedDate(new Date(Date.now() - (24 * 1) * 3600 * 1000))
-    let sevenDaysAgo = this._DateService.getFormattedDate(new Date(Date.now() - (24 * 14) * 3600 * 1000))
-    let url = "https://api.covid19api.com/country/"+country+"?from="+sevenDaysAgo+"T00:00:00Z&to="+yesterday+"T00:00:00Z"
-   // console.log(url)
+  getStatByCountry(country, period) {
+
+    let url = "https://disease.sh/v3/covid-19/historical/"+country+"?lastdays="+period
+    return this._http.get(url)
+  }
+
+  getStatWithMillionPerCase(){
+    let url ="https://disease.sh/v3/covid-19/countries?yesterday=true&allowNull=true";
     return this._http.get(url)
   }
 
@@ -23,14 +26,17 @@ export class APIService {
   }
 
   getWorldWide(){
-    return this._http.get("https://api.covid19api.com/summary")
+    return this._http.get("https://disease.sh/v3/covid-19/historical/all?lastdays=2")
   }
 
   getWorldWideTrend(){
-    let yesterday = this._DateService.getFormattedDate(new Date(Date.now() - (24 * 1) * 3600 * 1000))
-    let sevenDaysAgo = this._DateService.getFormattedDate(new Date(Date.now() - (24 * 14) * 3600 * 1000))
-    let url = "https://api.covid19api.com/world?from="+sevenDaysAgo+"T00:00:00Z&to="+yesterday+"T00:00:00Z"
+    let url = "https://disease.sh/v3/covid-19/historical/all?lastdays=30"
     return this._http.get(url)
+  }
+
+  getStatWithLocation(){
+    let url = "https://disease.sh/v3/covid-19/jhucsse";
+    return this._http.get<any>(url)
   }
 
   

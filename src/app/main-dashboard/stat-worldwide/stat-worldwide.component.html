@@ -1,0 +1,115 @@
+<div class="row rowCard ">
+
+
+  <div class="col-lg-3 col-md-6">
+
+    <div class="card ">
+
+      <div class="iconWrap">
+        <img src="assets/megaphone.svg">
+
+      </div>
+
+     
+      <h2 class="bigNum colorRed">
+        {{globalActive  | separator}}
+      </h2>
+
+      <p class="sub">Total Active Cases </p>
+      
+      <div class="percentOverview">
+        <b>{{percentActive}}</b> %
+        <img class="arrow" src="assets/inc.png" *ngIf="todayActiveIsHigher">
+        <img class="arrow" src="assets/dec.png" *ngIf="!todayActiveIsHigher">
+        since yesterday
+      </div>
+
+    </div>
+
+  </div>
+  <div class="col-lg-3 col-md-6">
+
+    <div class="card">
+
+      <div class="iconWrap">
+        <img src="assets/global.svg">
+
+      </div>
+
+     
+
+      <h2 class="bigNum colorOren">
+        {{ globalConfirmed | separator}}
+      </h2>
+
+      <p class="sub">Total Confirmed Cases</p>
+
+      <div class="percentOverview">
+        <b>{{percentConfirmed}}</b> %
+        <img class="arrow" src="assets/inc.png" *ngIf="todayConfirmedIsHigher">
+        <img class="arrow" src="assets/dec.png" *ngIf="!todayConfirmedIsHigher">
+        since yesterday
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-lg-3 col-md-6">
+
+    <div class="card">
+
+      <div class="iconWrap colorGreen">
+        <img src="assets/tick.svg">
+
+      </div>
+
+      
+
+      <h2 class="bigNum colorGreen">
+        {{globalRecovered | separator}}
+      </h2>
+
+     <p class="sub">Total Recovered Cases</p>
+
+      <div class="percentOverview">
+        <b>{{percentRecovered}}</b> %
+        <img class="arrow rotate" src="assets/inc.png" *ngIf="!todayRecoveredIsHigher">
+        <img class="arrow rotate" src="assets/dec.png" *ngIf="todayRecoveredIsHigher">
+        since yesterday
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="col-lg-3 col-md-6">
+
+    <div class="card">
+
+      <div class="iconWrap">
+        <img src="assets/user.svg">
+      </div>
+
+      
+
+      <h2 class="bigNum colorPurple">
+        {{  globalDeaths | separator}}
+      </h2>
+
+     <p class="sub">Total Death</p>
+
+      <div class="percentOverview">
+        <b>{{percentDeath}}</b> %
+        <img class="arrow" src="assets/inc.png" *ngIf="todayDeathIsHigher">
+        <img class="arrow" src="assets/dec.png" *ngIf="!todayDeathIsHigher">
+        since yesterday
+      </div>
+    </div>
+
+  </div>
+
+ 
+
+</div>

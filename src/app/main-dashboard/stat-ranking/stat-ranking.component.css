@@ -1,0 +1,78 @@
+.table td {
+  padding: 15px 20px 15px 0px;
+  vertical-align: top;
+  border-top: 0px solid #ededed;
+
+  text-align: left;
+
+  color: #686666;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 13px;
+
+}
+
+.table th {
+  border: solid 0px;
+  text-align: left;
+  font-weight: 700;
+  font-family: 'Lora', serif;
+
+  color: #2e2e2e;
+}
+
+.card {
+  padding: 40px;
+}
+
+.btnView {
+  color: #1f42a6;
+  border: solid 1px #1f42a6;
+  float: right;
+  margin-top: 15px;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+input,
+input:focus {
+  border: solid 0px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+  outline: none;
+  font-size: 13px;
+}
+
+.listWrapper {
+  max-height: 600px;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+
+  height:0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.card {
+  padding: 40px 35px;
+}

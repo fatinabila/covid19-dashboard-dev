@@ -1,0 +1,37 @@
+canvas{
+    max-height:295px;
+    width:auto;
+}
+
+.flex{
+    display: flex;;
+}
+
+.dropdown{
+    margin-left: 0px;
+    min-width:150px;
+}
+
+.dropdown-menu.show {
+    overflow: auto;
+    max-height: 278px;
+}
+
+.countryDropdown {
+    background-color: #ffffff;
+    /* box-shadow: 0 0 10px 1px rgba(93, 93, 93, 0.27); */
+    height: 40px;
+    min-width: 155px;
+    margin-top: -10px;
+    font-family: 'Lora', serif;
+}
+
+.cardBg {
+    background-color: #6236FF;
+    background-color: #7e5eee;
+}
+
+.pageTitle {
+    color:#fff;
+    float:left;margin-right:15px;
+}

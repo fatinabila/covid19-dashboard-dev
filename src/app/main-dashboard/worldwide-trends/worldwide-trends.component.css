@@ -1,0 +1,30 @@
+.dropdown-menu.show {
+   overflow: auto;
+   max-height: 278px;
+}
+
+.stats > div:first-child{
+  font-family: 'B612', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.stats > div {
+   text-align: center;
+
+}
+
+.stats {
+   margin-bottom:15px;
+}
+
+.countryWrapper {
+   width: 64px;
+   margin: auto;
+   margin-bottom: 10px;
+}
+
+.dropdown{
+   width: 85%;
+   margin: auto;
+}

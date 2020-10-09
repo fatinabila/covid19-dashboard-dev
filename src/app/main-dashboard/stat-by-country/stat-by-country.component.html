@@ -1,0 +1,23 @@
+
+
+
+<div class="card cardNoBorder cardBg">
+   
+    <div class="row">
+       <div class="col-md-12 col-lg-12">
+        <h5 class="pageTitle">Stats for the last 14 days in </h5>
+     
+        <div class="dropdown" style="float:left;">
+            <button class="btn dropdown-toggle countryDropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             {{currentCountry  | titlecase }}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div style="cursor: pointer;" class="dropdown-item" *ngFor="let i of listCountry" (click)="changeCountry(i.Slug, i.Country)">{{i.Country}}</div>
+            </div>
+          </div>
+       </div>
+
+    </div>
+    <br>
+    <canvas id="canvas">{{ chart }}</canvas>
+</div>

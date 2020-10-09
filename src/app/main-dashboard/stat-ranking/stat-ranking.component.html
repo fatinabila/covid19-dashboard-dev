@@ -1,0 +1,24 @@
+<div class="card ">
+
+  <h5 class="pageTitle">Active Cases </h5>
+  <br>
+
+  <input type="text" [(ngModel)]="countryFilter" placeholder="Search country" (blur)="track()" />
+  <div class="table-responsive listWrapper" style="margin-top:20px;">
+
+    <table class="table">
+      <tbody>
+
+        <tr *ngFor="let i of top10Ranking | tableFilter : countryFilter ;  index as item">
+          <td>
+            <img src="https://www.countryflags.io/{{i.CountryCode}}/flat/32.png" style="margin-right:10px">{{i.Country}} 
+          </td>
+          <td>{{i.Active | separator}}</td>
+          <!-- <td>{{i.UpdateAt}}</td> -->
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+</div>

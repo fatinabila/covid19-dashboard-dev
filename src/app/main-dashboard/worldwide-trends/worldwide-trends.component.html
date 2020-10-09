@@ -1,0 +1,35 @@
+<div class="card">
+   
+    <div class="countryWrapper">
+        <img src="https://www.countryflags.io/{{currentISO}}/flat/64.png">
+    </div>
+  
+    <div class="dropdown">
+      <button class="btn dropdown-toggle countryDropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false" style="width:100%;margin-bottom:15px;">
+        {{currentCountry  | titlecase }}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div style="cursor: pointer;" class="dropdown-item" *ngFor="let i of structuredData"
+          (click)="changeCountry(i.countryISO)">{{i.country}}</div>
+      </div>
+    </div>
+  
+    <div class="stats">
+      
+      <div> {{currentCasesPM  | separator}}</div>
+      <div>Cases Per Million</div>
+    </div>
+  
+    <div class="stats">
+      <div> {{currentDeathPM  | separator}}</div>
+      <div>Deaths Per Million</div>
+    </div>
+  
+    <div class="stats">
+      <div>{{currentTestPM  | separator}}</div>
+      <div>Test Per Million</div>
+    </div>
+  
+  </div>
+  

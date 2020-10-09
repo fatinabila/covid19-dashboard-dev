@@ -1,0 +1,15 @@
+.rowDashboard {
+    padding: 30px 50px 0px 50px;
+}
+
+.btnView{
+    background-color: #eeeeee;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+table > thead > tr > th:last-child {
+    display: none !important;
+
+}
